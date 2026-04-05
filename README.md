@@ -1,6 +1,6 @@
 # 🌌 Cosmic Chaos
 
-> NASA astronomy pictures. A random Pokémon. A terrible dad joke. All at once. Because why not.
+> MindBoggling Space News. A random Pokémon. A terrible dad joke. All at once. Because why not.
 
 Cosmic Chaos is a single-screen Android app that brings together three completely unrelated APIs into one beautifully chaotic experience. Hit the button, get something new from outer space, the Pokemon,space news and  dad jokes
 
