@@ -1,86 +1,60 @@
-# 🌀 API Mashup — App Wing Event
+# 🌌 Cosmic Chaos
 
-## 📌 What is API Mashup?
+> NASA astronomy pictures. A random Pokémon. A terrible dad joke. All at once. Because why not.
 
-API Mashup is an App Wing event where you build something *unforgettable*.
+Cosmic Chaos is a single-screen Android app that brings together three completely unrelated APIs into one beautifully chaotic experience. Hit the button, get something new from outer space, the Pokemon,space news and  dad jokes
 
-You'll be given a fixed set of quirky, completely unrelated APIs and exactly **2.5 hours** to combine them into one single-screen mobile app (Android or iOS) that is creative, hilarious, and surprisingly functional.
+##APK Link: https://drive.google.com/file/d/1ObO0mttTna_6e3DfnfzN1LW50HvpaXnc/view?usp=sharing
 
-The twist? The APIs don't go together. That's the point. Your job is to make them feel like they were *meant* to be together.
+
+##Why are the API's well related despite being weirdly different?
+Meet Leo, a 10-year-old kid who just got grounded for failing his science test on space. As punishment, his dad makes him use a boring old space news app to "learn something." But the app is broken — every time a space news article loads, it glitches and spits out a random Pokemon alongside it. Leo starts noticing the Pokemon actually match the news perfectly. A story about a meteor shower? Jolteon shows up. A black hole discovery? Gengar. A Mars dust storm? Sandslash. He becomes obsessed, convinced the universe is sending him coded messages through Pokémon. And every time he figures out a "match," his dad walks in, reads the headline, and responds with the most painfully unfunny dad joke about space. Leo groans every single time — but secretly, his dad's dumb jokes are the only reason he keeps reading the articles
+---
+
+## UI & Animations
+
+The whole app is built in **Jetpack Compose** with a dark space theme. A few things worth noting:
+
+-**Animated star background** 
+- **Glassmorphism cards** —
+- **Shimmer loading skeletons** 
+- **Stat bar animation** — 
+- **CHAOS FAB** — the floating action button at the bottom pulses while loading. Tapping it triggers haptic feedback and fires a fresh set of API calls.
+- **Error state** 
+---
+
+## Tech Stack
+
+| Layer | What's Used |
+|---|---|
+| Language | Kotlin |
+| UI | Jetpack Compose + Material 3 | |
+| Image loading | Coil (`AsyncImage`, `SubcomposeAsyncImage`) |
+| Concurrency | Kotlin Coroutines (`async`/`await`) |
 
 ---
 
-## 🎯 The Challenge
+## APIs Used
 
-* Build a **single-screen mobile app** (Android or iOS) in **2.5 hours**
-* Integrate **3–4 APIs** from the provided list
-* Display their data together in a **creative or entertaining way**
-* The combo should feel clever, not forced
+| API | What For | Auth |
+|---|---|---|
+| [Spaceflight News](    https://api.spaceflightnewsapi.net/v4/articles/) | Astronomy Picture of the Day |
+| [PokéAPI](https://pokeapi.co/) | Pokémon data & sprites | None required |
+| [icanhazdadjoke](https://icanhazdadjoke.com/) | Dad jokes | None required |
 
----
 
-## 🚀 Submission Guidelines
-
-Please follow these steps carefully to ensure your project is evaluated:
-
-1.  **Fork** this repository.
-2.  **Clone** your forked repository to your local machine.
-3.  Create a new **directory named after your team**.
-4.  **Initialize your project** within this directory (Android Studio or Xcode project).
-5.  **Showcase Video:** Record a 1–2 minute screen recording demonstrating your working project. Highlight the specific APIs and UI components you implemented.
-6.  **Attach Builds:** Include the link of downloadable APK file for Android and a zipped project file for Swift (Xcode) in the README.
-7.  **Commit & Push:** Add your project files, App screenshots and the showcase video (`.mp4` or a hosted link in your project's README) to your directory.
-8.  Open a **Pull Request (PR)** to this main repository before the **2.5-hour deadline**.
 
 ---
 
-## 🔌 Available APIs
+## Getting Started
 
-| Category | API | What it does | Endpoint |
-| :--- | :--- | :--- | :--- |
-| Humor | Kanye Rest | Random Kanye West quotes | `https://api.kanye.rest` |
-| Humor | Evil Insult | Creative / brutal insults | `https://evilinsult.com/generate_insult.php?lang=en&type=json` |
-| Humor | Advice Slip | Random life advice | `https://api.adviceslip.com/advice` |
-| Humor | Geek Jokes | Jokes for nerds & devs | `https://geek-jokes.sameerkumar.website/api?format=json` |
-| Humor | Dad Jokes | Random dad jokes *(requires Accept header)* | `https://icanhazdadjoke.com/` |
-| Humor | Chuck Norris | Chuck Norris facts & jokes | `https://api.chucknorris.io/jokes/random` |
-| Humor | Yes/No API | Random yes or no answer + GIF | `https://yesno.wtf/api` |
-| Fandom | Rick and Morty API | Characters & episodes | `https://rickandmortyapi.com/api/character` |
-| Fandom | SWAPI | Star Wars planets, ships & people | `https://swapi.dev/api/people/1/` |
-| Fandom | Disney API | Character filmography | `https://api.disneyapi.dev/character` |
-| Fandom | Open Trivia DB |  Trivia questions | `https://opentdb.com/api.php?amount=1` |
-| Fun | Deck of Cards API | Shuffle & draw cards | `https://deckofcardsapi.com/api/deck/new/draw/?count=1` |
-| Science | Spaceflight News | Real-time space news | `https://api.spaceflightnewsapi.net/v4/articles/` |
-| Science | CelesTrak | Satellite / ISS tracking | `https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json` |
-| Creative | Robohash | Unique robot avatars from text | `https://robohash.org/your-text-here` (You can write any name here) |
-| Creative | DiceBear Avatars | Cute pixel & custom avatars | `https://api.dicebear.com/7.x/pixel-art/svg?seed=John` (Refer this website if you want to change the style) |
-| Animals | The Cat API | Random cat images | `https://api.thecatapi.com/v1/images/search` |
-| Animals | The Dog API | Random dog images | `https://api.thedogapi.com/v1/images/search` |
-| Animals | Dog CEO API | Random dog images by breed | `https://dog.ceo/api/breeds/image/random` |
-| Utility | Random User | Fake identity generator | `https://randomuser.me/api/` |
-| Utility | Dummy Json | Dummy Products Data | `https://dummyjson.com/products` |
-| Utility | Agify | Predicts age from a name | `https://api.agify.io?name=michael` (You can use another name instead of michael too) |
+1. Clone the repo
+2. Open in Android Studio
+3. Run on a device or emulator (API 26+)
+4. Tap **CHAOS**
 
 ---
 
-## 🏆 Judging Criteria
 
-| Criterion | What we're looking for |
-| :--- | :--- |
-| **Creativity** | How originally and imaginatively are the APIs used? |
-| **Number of Features** | How many meaningful interactions and features did you build? |
-| **Cohesion** | Do the APIs feel naturally connected, or does it feel like a forced mashup? |
-| **Code Quality** | Clean, structured code — use of loggers, a repository pattern, smart list updates, a dedicated API client, etc. |
 
-### 💡 Bonus Points for:
-* Using a **Repository pattern** to centralize all API calls (no cluttered `Activity.kt` or `ViewController.swift`)
-* **DiffUtil** (Android) or **DiffableDataSource / Native SwiftUI Lists** (iOS) for smooth list updates
-* Proper **logging** throughout the app
-* **Error handling** and elegant loading states
-* Smooth and polished UI despite the chaos
-
----
-
-> ⚠️ PRs submitted after the deadline will not be considered for judging.
-
----
+*Built for the joy of it. Three APIs walk into a bar...*
