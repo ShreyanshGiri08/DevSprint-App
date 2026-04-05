@@ -8,6 +8,8 @@ Cosmic Chaos is a single-screen Android app that brings together three completel
 
 
 ##Why are the API's well related despite being weirdly different?##
+   
+   ---
 Meet Leo, a 10-year-old kid who just got grounded for failing his science test on space. As punishment, his dad makes him use a boring old space news app to "learn something." But the app is broken — every time a space news article loads, it glitches and spits out a random Pokemon alongside it. Leo starts noticing the Pokemon actually match the news perfectly. A story about a meteor shower? Jolteon shows up. A black hole discovery? Gengar. A Mars dust storm? Sandslash. He becomes obsessed, convinced the universe is sending him coded messages through Pokémon. And every time he figures out a "match," his dad walks in, reads the headline, and responds with the most painfully unfunny dad joke about space. Leo groans every single time — but secretly, his dad's dumb jokes are the only reason he keeps reading the articles
 ---
 
