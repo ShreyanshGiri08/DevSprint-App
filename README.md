@@ -28,8 +28,9 @@ Please follow these steps carefully to ensure your project is evaluated:
 3.  Create a new **directory named after your team**.
 4.  **Initialize your project** within this directory (Android Studio or Xcode project).
 5.  **Showcase Video:** Record a 1–2 minute screen recording demonstrating your working project. Highlight the specific APIs and UI components you implemented.
-6.  **Commit & Push:** Add your project files, App screenshots and the showcase video (`.mp4` or a hosted link in your project's README) to your directory.
-7.  Open a **Pull Request (PR)** to this main repository before the **2.5-hour deadline**.
+6.  **Attach Builds:** Include the link of downloadable APK file for Android and a zipped project file for Swift (Xcode) in the README.
+7.  **Commit & Push:** Add your project files, App screenshots and the showcase video (`.mp4` or a hosted link in your project's README) to your directory.
+8.  Open a **Pull Request (PR)** to this main repository before the **2.5-hour deadline**.
 
 ---
 
